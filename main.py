@@ -50,12 +50,10 @@ class Survivor():
   
 
 survivors.append(Survivor(100,100,100,False,0))
-data = [];
 print(survivors)
 while True:
-  survi = survivors[0]
-  print(survi.health)
-  print(survivors)
-  survi.passDay()
-  print(survi.hunger)
-
+  for survi in survivors:
+    print(survi.health)
+    print(survivors)
+    survi.passDay()
+    print(survi.hunger)
